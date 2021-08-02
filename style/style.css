@@ -1,0 +1,356 @@
+@charset "UTF-8";
+
+* {
+    color: #333; /* 기본 텍스트 색 */
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #fff;
+    /* 배경색 */
+}
+img {
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+.flexContainer {
+    display: flex;
+}
+/* ie 낮은 버전에서 동일하게 출력용 */
+header,
+nav,
+main,
+footer,
+aside,
+section,
+article {
+    display: block;
+}
+/*  */
+
+/* 가이드라인 */
+/* div#wrap {
+    border: 1px solid #000;
+} */
+/* header#header {
+    border: 1px solid #000;
+} */
+/* div#headerLogo {
+    border: 1px solid #000;
+} */
+/* div#searchFrame {
+    border: 1px solid #000;
+} */
+/* table tr td {
+    border: 1px solid #000;
+} */
+/* div#myPageArea {
+    border: 1px solid #000;
+} */
+/* nav#gnb {
+    border: 1px solid #000;
+} */
+/* aside#lnb {
+    border: 1px solid #000;
+} */
+/* div#loginArea {
+    border: 1px solid #000;
+} */
+/* 가이드라인 끝 */
+
+/* div#wrap */
+div#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+/* div#wrap */
+/* header#header */
+div#headerFrame {
+    width: 1030px;
+    height: 150px;
+    margin: 0 auto;
+}
+#header div#headerLogo {
+    line-height: 150px;
+    flex: 1;
+}
+/* div#searchFrame */
+#searchFrame {
+    display: table;
+}
+#searchFrame div#searchArea {
+    display: table-cell;
+    vertical-align: middle;
+}
+#searchFrame table {
+    margin: 0 60px;
+}
+#searchFrame table tr:first-child td {
+    color: #4b9ec9;
+    font-size: 11px;
+    font-weight: bold;
+}
+#searchFrame table tr:nth-child(2) td:first-child {
+    background-color: #4b9ec9;
+}
+input[name='search'] {
+    width: 100%;
+    height: 35px;
+    font-size: 17px;
+    border: none;
+    border: 1px solid #4b9ec9;
+}
+#searchFrame button#searchBtn {
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    background-color: #4b9ec9;
+    border: none;
+}
+#searchFrame table tr:nth-child(3) td {
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 9px;
+}
+#searchFrame table tr:nth-child(3) td:first-child {
+    padding: 0;
+}
+/* div#searchFrame */
+/* div#myPageArea */
+div#myPageArea {
+    line-height: 150px;
+}
+div#myPageArea #myMenu li {
+    font-size: 10px;
+    padding: 0 5px;
+}
+/* div#myPageArea */
+/* header#header */
+
+/* nav#gnb */
+
+#gnb ul#mainMenu {
+    margin: 0 25px;
+}
+#gnb #mainMenu li {
+    text-align: center;
+    /* padding: 5px 10px; */
+
+    /* padding: 5px 10px; */
+}
+#gnb #mainMenu li a {
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    padding: 10px 23px;
+    display: inline-block;
+    background-color: #333;
+    border: 1px solid #fff;
+    border-right: none;
+}
+/* gnb메뉴 밑줄 */
+#gnb #mainMenu li a:hover {
+    border-bottom: 2px solid #4b9ec9;
+}
+/* gnb메뉴 밑줄 */
+#gnb #mainMenu li:first-child a {
+    width: 130px;
+    background-color: #4b9ec9;
+}
+#gnb span#favoritesPlus {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+#gnb #mainMenu li:last-child a {
+    background-color: #f80;
+    padding: 5px 15px;
+    border-left: none;
+    margin-top: 5px;
+}
+/* nav#gnb */
+
+/* main#main */
+main#main {
+    width: 1000px;
+    padding-top: 10px;
+    border-bottom: 3px solid #000;
+    margin: 0 auto;
+}
+#main aside#lnb {
+    /* flex: 1; */
+
+    border-radius: 10px;
+}
+#lnb h3 {
+    text-align: center;
+    font-weight: normal;
+}
+#lnb #lnbMenu {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px 30px;
+}
+#lnb #lnbMenu li.lnbLi {
+    font-size: 12px;
+    line-height: 23px;
+    padding: 0 3px;
+}
+#myShopUnder {
+    border: none;
+    border: 2px solid #eee;
+}
+/* div#loginArea */
+div#loginArea {
+    margin: 0 80px;
+    margin-left: 170px;
+}
+#loginArea div#loginTxt {
+    padding: 30px 0;
+}
+#loginArea div#loginTxt p:first-child {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+#loginArea div#loginTxt p:first-child span {
+    color: #569308;
+}
+#loginArea div#loginTxt p:nth-child(2) {
+    font-size: 13px;
+}
+#loginArea div#loginTxt p span:first-child {
+    color: #14b3ae;
+    font-size: 20px;
+}
+/*  */
+div#loginFrm {
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    padding: 30px;
+    padding-right: 50px;
+}
+#loginFrm table tr td {
+    width: 65px;
+    font-size: 12px;
+    padding: 1px;
+}
+#loginFrm table input[type='text'],
+[type='password'] {
+    border: 1px solid #ccc;
+    width: 125px;
+    height: 25px;
+}
+#loginFrm table input[type='checkbox'] {
+    margin-left: 5px;
+}
+#loginFrm table input[type='submit'] {
+    background-color: #aaa;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 20px;
+    color: #fff;
+    font-size: 12px;
+}
+#loginFrm table tr:first-child td:first-child {
+    color: #531474;
+    font-size: 11px;
+}
+/* div#loginArea */
+/*  */
+
+/* div#memberShortcut */
+div#memberShortcut {
+    margin: 40px 0;
+    padding: 0 15px;
+}
+#memberShortcut div.shortcut a {
+    display: inline-block;
+}
+#memberShortcut div.shortcut img:first-child {
+    vertical-align: top;
+}
+#memberShortcut div.shortcut a span {
+    color: #531474;
+    font-size: 13px;
+}
+#memberShortcut div.shortcut a p {
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 3px;
+}
+#memberShortcut > p {
+    font-size: 11px;
+}
+/* div#memberShortcut */
+/* main#main */
+/* footer#footer  */
+footer#footer {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+#footer > div {
+    /* flex: 1; */
+    margin: 20px;
+}
+#footer > div h3 {
+    padding-bottom: 20px;
+}
+#footer div#contactUs p:nth-child(2) {
+    font-size: 26px;
+}
+#footer div#contactUs p:last-child {
+    font-size: 14px;
+    line-height: 25px;
+}
+#footer div#bankingInfo {
+    width: 240px;
+}
+#footer div#bankingInfo p {
+    font-size: 20px;
+}
+#footer div#bankingInfo p:nth-child(2) > span {
+    color: #01559d;
+    font-weight: bold;
+}
+#footer div#bankingInfo p:nth-child(3) {
+    font-size: 26px;
+}
+#footer div#bankingInfo p:nth-child(5) {
+    font-size: 15px;
+}
+#footer div#bankingInfo p:nth-child(5) > span {
+    font-weight: bold;
+    font-size: 15px;
+}
+#footer div#delivery {
+    width: 270px;
+}
+#footer div#delivery p {
+    line-height: 30px;
+}
+#footer div#delivery p > span#tel {
+    font-size: 26px;
+}
+#footer div#delivery p#addr {
+    font-size: 15px;
+    color: #666;
+    line-height: 15px;
+}
+#footer #delivery span#addrSpan {
+    color: #666;
+}
+#footer div#community {
+    width: 100px;
+}
+#footer #footerMenu {
+    line-height: 23px;
+    font-size: 15px;
+    color: #666;
+}
+/* footer#footer  */
